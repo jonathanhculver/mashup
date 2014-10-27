@@ -2,7 +2,8 @@
   "name": "picsofpix",
   "description": "instagram mashup project",
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "start": "node app.js"
   },
   "devDependencies": {
     "grunt": "^0.4.4",

@@ -1,0 +1,26 @@
+@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro";
+
+.imgContain {
+	height: 300px;
+}
+
+.icon {
+	font-size: 72px;
+	text-align: center;
+	width: 100%;
+	margin-top: 300px;
+}
+
+#header {
+	float: left;
+	height: 50px;
+	width: 100%;
+	border-bottom: 1px solid #c4c4c4;
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-family: "Source Sans Pro";
+	font-size: 48px;
+	margin-top: -10px
+}

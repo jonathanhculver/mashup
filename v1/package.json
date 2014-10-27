@@ -1,0 +1,20 @@
+{
+  "name": "picsofpix",
+  "description": "instagram mashup project",
+  "scripts": {
+    "test": "grunt"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-html-validation": "^0.1.15"
+  },
+  "dependencies": {
+    "restify": "*",
+    "instagram-node": "*"
+  },
+  "version": "0.0.0",
+  "main": "app.js",
+  "author": "jonathanhculver",
+  "license": "ISC"
+}

@@ -24,3 +24,11 @@ h1 {
 	font-size: 48px;
 	margin-top: -10px
 }
+
+a:hover {
+	opacity: .6;
+}
+
+#env {
+	display: none;
+}

@@ -4,22 +4,37 @@ app.mashup = (function() {
 	
 	var self = {};
 	var content;
+	var env;
 	
 	self.init = function() {
 		content = $('#content');
-		var host = 'http://localhost:5000';
-		var url = '/images/tag/picsofpix/user/jonathanhculver';
-		url = host+url;
-		var params = {};
-		app.mashup.image.init();
-		app.mashup.helper.ajax(url, params, function(results) {
-			content.html('');
-			for(var i=0; i<results.count; i++) {
-				app.mashup.image.buildImage(results.images[i]);
-				if(i+1%3 === 0) {
-					content.append("<div class='grid_clear'></div>");
-				}
+		self.setEnvironment(function() {
+			if(env === 'dev') {
+				var host = 'http://localhost:5000';
+			} else {
+				var host = 'http://picsofpix.herokuapp.com/v1';
 			}
+			var url = '/images/tag/picsofpix/user/jonathanhculver';
+			url = host+url;
+			var params = {};
+			app.mashup.image.init();
+			app.mashup.helper.ajax(url, params, function(results) {
+				content.html('');
+				for(var i=0; i<results.count; i++) {
+					app.mashup.image.buildImage(results.images[i]);
+					if(i+1%3 === 0) {
+						content.append("<div class='grid_clear'></div>");
+					}
+				}
+			}, 'GET');
+		});
+	};
+
+	self.setEnvironment = function(callback) {
+		app.mashup.helper.ajax('/env', {}, function(data) {
+			$('#env').attr('data-env', data);
+			env = data;
+			callback();
 		}, 'GET');
 	};
 
@@ -41,6 +56,8 @@ app.mashup.image = (function(){
 	self.buildImage = function(image) {
 		var imgHtml = $(template).clone();
 		var img = imgHtml.find('img');
+		var a = imgHtml.find('a');
+		a.attr('href', image.link);
 		img.attr('src', image.images.standard_resolution.url);
 		content.append(imgHtml);
 	};

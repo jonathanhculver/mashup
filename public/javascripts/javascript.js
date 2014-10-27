@@ -12,7 +12,7 @@ app.mashup = (function() {
 			if(env === 'dev') {
 				var host = 'http://localhost:5000';
 			} else {
-				var host = 'http://picsofpix.herokuapp.com/v1';
+				var host = 'http://pixelapi.herokuapp.com/';
 			}
 			var url = '/images/tag/picsofpix/user/jonathanhculver';
 			url = host+url;

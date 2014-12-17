@@ -1,4 +1,5 @@
 @import "http://fonts.googleapis.com/css?family=Source+Sans+Pro";
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,700,400");
 
 .imgContain {
 	height: 300px;
@@ -13,16 +14,17 @@
 
 #header {
 	float: left;
-	height: 50px;
+	height: 75px;
 	width: 100%;
 	border-bottom: 1px solid #c4c4c4;
 	margin-bottom: 10px;
 }
 
 h1 {
-	font-family: "Source Sans Pro";
+	font-family: "Open Sans";
 	font-size: 48px;
-	margin-top: -10px
+	margin-top: 0px;
+	font-weight: 300;
 }
 
 a:hover {

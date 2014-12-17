@@ -18,7 +18,6 @@ app.get('/template/:name', function(req, res){
 });
 
 app.get('/env', function(req, res) {
-	console.log(env);
 	var env = process.env.PORT ? 'prod' : 'dev';
 	res.json(env);
 });

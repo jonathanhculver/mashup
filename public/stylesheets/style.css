@@ -1,8 +1,15 @@
 @import "http://fonts.googleapis.com/css?family=Source+Sans+Pro";
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,700,400");
 
+@font-face {
+    font-family: "social-icon-font";
+    font-style: normal;
+    font-weight: normal;
+    src: url("//static.squarespace.com/universal/fonts/social-20140925/social-icon-font.eot?#iefix") format("embedded-opentype"), url("//static.squarespace.com/universal/fonts/social-20140925/social-icon-font.woff") format("woff"), url("//static.squarespace.com/universal/fonts/social-20140925/social-icon-font.ttf") format("truetype"), url("//static.squarespace.com/universal/fonts/social-20140925/social-icon-font.svg#social-icon-font") format("svg");
+}
+
 .imgContain {
-	height: 300px;
+	height: 218px;
 }
 
 .icon {
@@ -34,3 +41,57 @@ a:hover {
 #env {
 	display: none;
 }
+
+/** social icons **/
+
+.social-smugmug:before, .social-dribbble:before, .social-youtube:before, .social-vimeo:before, .social-twitter:before, .social-tumblr:before, .social-pinterest:before, .social-linkedin:before, .social-instagram:before, .social-google:before, .social-foursquare:before, .social-flickr:before, .social-facebook:before, .social-fivehundredpix:before, .social-fivehundredpx:before, .social-email:before, .social-github:before, .social-rss:before, .social-spotify:before, .social-soundcloud:before, .social-itunes:before, .social-google_play:before, .social-dropbox:before, .social-bandsintown:before, .social-behance:before, .social-codepen:before, .social-medium:before, .social-rdio:before, .social-squarespace:before, .social-vine:before, .social-yelp:before, .social-vevo:before, .social-meetup:before, .social-smugmug-square:before, .social-dribbble-square:before, .social-youtube-square:before, .social-vimeo-square:before, .social-twitter-square:before, .social-tumblr-square:before, .social-pinterest-square:before, .social-linkedin-square:before, .social-instagram-square:before, .social-google-square:before, .social-foursquare-square:before, .social-flickr-square:before, .social-facebook-square:before, .social-fivehundredpix-square:before, .social-fivehundredpx-square:before, .social-email-square:before, .social-github-square:before, .social-rss-square:before, .social-spotify-square:before, .social-soundcloud-square:before, .social-itunes-square:before, .social-google_play-square:before, .social-dropbox-square:before, .social-bandsintown-square:before, .social-behance-square:before, .social-codepen-square:before, .social-medium-square:before, .social-rdio-square:before, .social-squarespace-square:before, .social-vine-square:before, .social-yelp-square:before, .social-vevo-square:before, .social-meetup-square:before, .social-smugmug-round:before, .social-dribbble-round:before, .social-youtube-round:before, .social-vimeo-round:before, .social-twitter-round:before, .social-tumblr-round:before, .social-pinterest-round:before, .social-linkedin-round:before, .social-instagram-round:before, .social-google-round:before, .social-foursquare-round:before, .social-flickr-round:before, .social-facebook-round:before, .social-fivehundredpix-round:before, .social-fivehundredpx-round:before, .social-email-round:before, .social-github-round:before, .social-rss-round:before, .social-spotify-round:before, .social-soundcloud-round:before, .social-itunes-round:before, .social-google_play-round:before, .social-dropbox-round:before, .social-bandsintown-round:before, .social-behance-round:before, .social-codepen-round:before, .social-medium-round:before, .social-rdio-round:before, .social-squarespace-round:before, .social-vine-round:before, .social-yelp-round:before, .social-vevo-round:before, .social-meetup-round:before {
+	-moz-osx-font-smoothing: grayscale;
+	font-family: "social-icon-font";
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.social-twitter:before {
+	content: "";
+}
+
+.social-facebook:before {
+	content: "";
+}
+
+.social-instagram:before {
+	content: "";
+}
+
+.social-email:before {
+	content: "";
+}
+
+.social-github:before {
+  content: "";
+}
+
+#socialLinks:before, #socialLinks:after {
+	content: "";
+	display: table;
+}
+
+#socialLinks {
+	width: 144px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#socialLinks a {
+	color: #333;
+	text-decoration: none;
+}
+
+#socialLinks a:hover{
+	color: #666;
+	text-decoration: none;
+}
+
+
+/** end icons ***/
